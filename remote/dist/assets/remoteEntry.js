@@ -3,11 +3,11 @@ import { _ as __vitePreload } from './preload-helper-1e3b7978.js';
 const exportSet = new Set(['Module', '__esModule', 'default', '_export_sfc']);
       let moduleMap = {
 "./A":()=>{
-      dynamicLoadingCss(["style-9f006b58.css"], false, './A');
-      return __federation_import('./__federation_expose_A-a3ae90bb.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      
+      return __federation_import('./__federation_expose_A-dcdc43d7.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./B":()=>{
-      dynamicLoadingCss(["style-9f006b58.css"], false, './B');
-      return __federation_import('./__federation_expose_B-8b091e74.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      
+      return __federation_import('./__federation_expose_B-89490659.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
     const seen = {};
     const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
       const metaUrl = import.meta.url;

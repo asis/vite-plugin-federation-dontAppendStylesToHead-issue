@@ -602,21 +602,17 @@ const remotesMap = {
                     return __federation_method_ensure(remoteName).then((remote) => remote.get(componentName).then(factory => factory()));
                 }
 
-const App$1 = '';
-
 const __federation_var_remoteAppA = await __federation_method_getRemote("remoteApp" , "./A");
  let A = __federation_method_unwrapDefault(__federation_var_remoteAppA); 
 const __federation_var_remoteAppB = await __federation_method_getRemote("remoteApp" , "./B");
  let B = __federation_method_unwrapDefault(__federation_var_remoteAppB); 
 function App() {
-  return /* @__PURE__ */ jsxs("div", { className: "App", children: [
-    /* @__PURE__ */ jsx("div", { className: "card", children: /* @__PURE__ */ jsx(A, {}) }),
-    /* @__PURE__ */ jsx("div", { className: "card", children: /* @__PURE__ */ jsx(B, {}) }),
+  return /* @__PURE__ */ jsxs("div", { style: { width: "100%", gap: 40, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }, children: [
+    /* @__PURE__ */ jsx(A, {}),
+    /* @__PURE__ */ jsx(B, {}),
     /* @__PURE__ */ jsx("pre", { children: JSON.stringify(Object.keys(window).filter((key) => key.startsWith("css__"))) })
   ] });
 }
-
-const index = '';
 
 const React = await importShared('react');
 client.createRoot(document.getElementById("root")).render(

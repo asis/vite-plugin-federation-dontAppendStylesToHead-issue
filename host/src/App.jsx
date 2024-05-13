@@ -1,17 +1,12 @@
-import './App.css'
 import A from 'remoteApp/A';
 import B from 'remoteApp/B';
 
 function App() {
   return (
-    <div className="App">
-      <div className="card">
-        <A />
-      </div>
+    <div style={{ width: "100%", gap: 40, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+      <A />
 
-      <div className="card">
-        <B />
-      </div>
+      <B />
 
       <pre>{JSON.stringify(Object.keys(window).filter(key => key.startsWith("css__")))}</pre>
     </div>

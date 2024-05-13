@@ -1,9 +1,9 @@
-import "./shared.css"
+import "./common.css"
 import "./b.css"
 
 export const B = () => {
   return (
-    <div className="shared b">
+    <div className="common b">
       Component B
     </div>
   )

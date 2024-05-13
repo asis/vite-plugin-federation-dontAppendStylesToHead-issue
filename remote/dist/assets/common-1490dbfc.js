@@ -25,6 +25,6 @@ var jsxRuntimeExports = jsxRuntime.exports;
 const jsx = jsxRuntimeExports.jsx;
 const jsxs = jsxRuntimeExports.jsxs;
 
-const shared = '';
+const common = '';
 
 export { jsxs as a, jsx as j };

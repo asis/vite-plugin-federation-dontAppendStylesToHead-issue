@@ -1,17 +1,12 @@
-import './App.css'
 import A from "./components/A"
 import B from "./components/B"
 
 function App() {
   return (
-    <div className="App">
-      <div className="card">
-        <A />
-      </div>
+    <div>
+      <A />
 
-      <div className="card">
-        <B />
-      </div>
+      <B />
 
       <pre>{JSON.stringify(Object.keys(window).filter(key => key.startsWith("css__")))}</pre>
     </div>
